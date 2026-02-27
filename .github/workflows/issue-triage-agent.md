@@ -6,11 +6,13 @@ on:
     types: [opened, reopened]
 
 permissions:
+  contents: read
   issues: read
 
 tools:
   github:
     toolsets: [issues, labels]
+  bash: ["gh"]
 
 safe-outputs:
   add-labels:
