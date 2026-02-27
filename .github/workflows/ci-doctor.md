@@ -11,6 +11,8 @@ if: github.event.workflow_run.conclusion == 'failure'
 permissions:
   contents: read
   actions: read
+  issues: read
+  pull-requests: read
 
 tools:
   github:

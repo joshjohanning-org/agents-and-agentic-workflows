@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: read
+  issues: read
+  pull-requests: read
 
 tools:
   github:
@@ -18,7 +20,6 @@ safe-outputs:
   create-pull-request:
     title-prefix: "[simplify] "
     labels: [code-quality, automated]
-    branch-prefix: "simplify/"
 ---
 
 # Code Simplifier

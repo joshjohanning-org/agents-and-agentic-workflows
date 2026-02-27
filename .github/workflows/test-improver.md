@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: read
 
 tools:
   github:
@@ -18,7 +19,6 @@ safe-outputs:
   create-pull-request:
     title-prefix: "[test] "
     labels: [testing, automated]
-    branch-prefix: "test-improve/"
 ---
 
 # Test Coverage Improver

@@ -10,6 +10,7 @@ if: github.event.pull_request.merged == true
 permissions:
   contents: read
   pull-requests: read
+  issues: read
 
 tools:
   github:
@@ -20,7 +21,6 @@ safe-outputs:
   create-pull-request:
     title-prefix: "[doc-sync] "
     labels: [documentation, automated]
-    branch-prefix: "doc-sync/"
 ---
 
 # Documentation Sync Agent
