@@ -44,7 +44,9 @@ A CI workflow has failed in ${{ github.repository }}.
 ## Output
 
 Create an issue with:
+
 - A clear title describing the failure
+- use as many emojis as you can to make it more fun and engaging
 - The specific error message(s) from the logs
 - The likely root cause analysis
 - A proposed fix with code snippets if applicable
