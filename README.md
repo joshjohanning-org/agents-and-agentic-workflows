@@ -1,5 +1,11 @@
 # Agents and Agentic Workflows Demo
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/joshjohanning-org/agents-and-agentic-workflows?style=flat)](https://github.com/joshjohanning-org/agents-and-agentic-workflows/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/joshjohanning-org/agents-and-agentic-workflows)](https://github.com/joshjohanning-org/agents-and-agentic-workflows/issues)
+[![Daily Repo Status](https://github.com/joshjohanning-org/agents-and-agentic-workflows/actions/workflows/daily-repo-status.lock.yml/badge.svg)](https://github.com/joshjohanning-org/agents-and-agentic-workflows/actions/workflows/daily-repo-status.lock.yml)
+[![Issue Triage](https://github.com/joshjohanning-org/agents-and-agentic-workflows/actions/workflows/issue-triage-agent.lock.yml/badge.svg)](https://github.com/joshjohanning-org/agents-and-agentic-workflows/actions/workflows/issue-triage-agent.lock.yml)
+
 This repository demonstrates **GitHub Agentic Workflows** -- automated, intent-driven repository workflows that run in GitHub Actions, authored in plain Markdown, and executed with coding agents (such as GitHub Copilot, Claude, or OpenAI Codex).
 
 ## What are GitHub Agentic Workflows?
