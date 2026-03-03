@@ -50,7 +50,7 @@ safe-inputs:
       gh api repos/$GITHUB_REPOSITORY/code-scanning/alerts \
         --jq '[.[] | select(.state == "open") | {
           number: .number,
-          severity: .rule.severity,
+          severity: (.rule.security_severity_level // .rule.severity),
           description: .rule.description,
           tool: .tool.name,
           location: "\(.most_recent_instance.location.path):\(.most_recent_instance.location.start_line)"

@@ -22,7 +22,7 @@
 # For more information: https://github.github.com/gh-aw/introduction/overview/
 #
 #
-# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"c3713a1698758172703ae130fca940e9edeb0486a1c1df55187ae88711f5f360","compiler_version":"v0.50.6"}
+# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"5068f4182baba7f8fca5d328c88e43c064a0dcc37369a28982b0d6c1b7e0b5a9","compiler_version":"v0.50.6"}
 
 name: "Security Advisory Monitor"
 "on":
@@ -665,7 +665,7 @@ jobs:
           gh api repos/$GITHUB_REPOSITORY/code-scanning/alerts \
             --jq '[.[] | select(.state == "open") | {
               number: .number,
-              severity: .rule.severity,
+              severity: (.rule.security_severity_level // .rule.severity),
               description: .rule.description,
               tool: .tool.name,
               location: "\(.most_recent_instance.location.path):\(.most_recent_instance.location.start_line)"
