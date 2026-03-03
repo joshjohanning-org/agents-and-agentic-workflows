@@ -41,7 +41,7 @@ safe-inputs:
           created: .created_at
         }]' 2>/dev/null || echo "[]"
     env:
-      GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      GH_TOKEN: "${{ secrets.GH_AW_SECURITY_ALERTS_TOKEN }}"
       GITHUB_REPOSITORY: "${{ github.repository }}"
 
   check-code-scanning-alerts:
@@ -56,7 +56,7 @@ safe-inputs:
           location: "\(.most_recent_instance.location.path):\(.most_recent_instance.location.start_line)"
         }] | .[0:20]' 2>/dev/null || echo "[]"
     env:
-      GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      GH_TOKEN: "${{ secrets.GH_AW_SECURITY_ALERTS_TOKEN }}"
       GITHUB_REPOSITORY: "${{ github.repository }}"
 
   check-secret-scanning-alerts:
@@ -66,7 +66,7 @@ safe-inputs:
         --jq '[.[] | select(.state == "open")] | length' 2>/dev/null || echo "0")
       echo "{\"open_alerts\": $count}"
     env:
-      GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      GH_TOKEN: "${{ secrets.GH_AW_SECURITY_ALERTS_TOKEN }}"
       GITHUB_REPOSITORY: "${{ github.repository }}"
 
 safe-outputs:
