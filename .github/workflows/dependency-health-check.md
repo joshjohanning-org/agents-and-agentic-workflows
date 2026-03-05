@@ -146,8 +146,8 @@ safe-outputs:
 network:
   allowed:
     - defaults
-    - registry.npmjs.org
-    - pypi.org
+    - node
+    - python
 ---
 
 # Dependency Health Check
