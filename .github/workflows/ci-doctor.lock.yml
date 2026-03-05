@@ -22,12 +22,14 @@
 # For more information: https://github.github.com/gh-aw/introduction/overview/
 #
 #
-# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"dbf57078e67169e5f6dd39051b747805c0edc476813d3292b597eb9a0409ba66","compiler_version":"v0.53.4"}
+# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"adefdfaa662f13c79830fa32ff318b90efc29d7e0b164bd96b83849757f90e09","compiler_version":"v0.53.4"}
 
 name: "CI Doctor -- Failure Investigator"
 "on":
   workflow_run:
     # zizmor: ignore[dangerous-triggers] - workflow_run trigger is secured with role and fork validation
+    branches:
+    - main
     types:
     - completed
     workflows:
