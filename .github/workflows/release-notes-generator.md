@@ -17,7 +17,7 @@ tools:
 
 # Custom MCP tools defined inline -- these run as isolated processes
 # the agent can call, giving it dynamic data-fetching capabilities
-safe-inputs:
+mcp-scripts:
   get-commits-since-tag:
     description: "Get all commits between two git tags or since a tag"
     inputs:

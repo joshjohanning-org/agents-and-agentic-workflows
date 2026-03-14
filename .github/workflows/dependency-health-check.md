@@ -25,7 +25,7 @@ tools:
 
 # Custom inline tools -- the agent calls these like any MCP tool,
 # but they are defined right here in the workflow as safe-inputs
-safe-inputs:
+mcp-scripts:
   analyze-package-json:
     description: "Analyze a package.json file and return dependency info with version details"
     inputs:

@@ -25,7 +25,7 @@ mcp-servers:
       - ask_question
 
 # Custom inline tools for fetching security data
-safe-inputs:
+mcp-scripts:
   check-dependabot-alerts:
     description: "Fetch open Dependabot security alerts for the repository"
     run: |
